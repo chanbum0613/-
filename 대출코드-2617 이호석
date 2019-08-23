@@ -1,0 +1,13 @@
+def danlidachul(a,n,r) :
+	return a*(n+1)*(1+r*n/200)/(1+r*n/100)
+n=int(input("단리로 돈을 대출할 햇수를 입력해 주십시오"))
+a=int(input("월급을 입력해 주십시오"))
+r=int(input("연이율을 퍼센트 빼고 입력해 주세요"))
+print(n,"년 까지 단리로 당신이 대출가능한 돈은", danlidachul(a,n,r), "원 입니다.")
+
+def boklidachul(a,n,r) :
+    return a*(((r+1)/100)**n-1)/((r/100)*((1+(r/100))**n)
+a=int(input("복리로 돈을 대출할 햇수를 입력해 주십시오"))
+n=int(input("월급을 입력해 주십시오"))
+r=int(input("연이율을 퍼센트 빼고 입력해 주세요"))
+print(n,"년 까지 복리로 당신이 대출가능한 돈은", boklidachul(a,n,r), "원 입니다.")
