@@ -1,4 +1,5 @@
 def gukbabchung(n) :
 	return n//7000
 n=int(input("당신이 n년 뒤 받을 돈을 입력해 주십시오"))
-print("그 돈이면 국밥",gukbabchung(n),"그릇을 먹겠다")
+food=input("당신이 돈을 벌고 나서, 먹고 싶은 음식을 입력해 주십시오")
+print("야ㅋㅋ",food,"그걸 왜 먹냐? 그 돈이면 차라리 뜨끈~한 국밥",gukbabchung(n),"그릇 든든~하게 먹고 말지")
