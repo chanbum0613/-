@@ -56,35 +56,29 @@ while True: #입력값 루프, 0 입력 시 루프 종료?
     cnvt = int(input("1(국밥 몇 그릇 먹을수 있을까요) 2(단리) 3(햄버거 몇개 먹을수 있을까요?) 4(복리) 5(원리합계 연말) 6(원리합계 연초) 7(짜장면 몇 그릇 먹을수 있을까요?) 8(투자가이드)"))
     if cnvt >= 1 and cnvt <=8:
         if cnvt == 1:
-            rslt = comp(src)
-            print(src, "->", rslt)
+            rslt = gukbabchung(n)
+            print(rslt)
         elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)            
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)            
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)            
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)            
-        elif cnvt == 2:
-            rslt = rev(src)
-            print(src, "->", rslt)            
-        else:
-            rslt = rev_comp(src)
-            print(src,"->",rslt)
+            rslt = danli(a,n,r)
+            print(rslt)
+        elif cnvt == 3:
+            rslt = Lotteria(n)
+            print(rslt)
+        elif cnvt == 4:
+            rslt = bokli(a,n,r)
+            print(rslt)
+        elif cnvt == 5:
+            rslt = wonlimal(a,n,r)
+            print(rslt)            
+        elif cnvt == 6:
+            rslt = wonlicho(a,n,r)
+            print(rslt)            
+        elif cnvt == 7:
+            rslt = Zzazzarazzazza(n)
+            print(rslt)            
+        elif cnvt == 8:
+            rslt = tuzaguide(a,k,n,r)
+            print(rslt)            
     elif cnvt == 0:
         break
     else:
