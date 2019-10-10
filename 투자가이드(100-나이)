@@ -2,9 +2,9 @@ def tuzaguide(a,k,n,r) :
     p = r/100
     return a/r*((100*a*(1+p)**n-1)/r+(1+p)*(k*(1+p)-k-n))
 
-r=int(input("연이율을 입력해 주십시오"))
-n=int(input("투자할 년수를 입력해 주세요")
 a=int(input("당신의 연봉을 입력해 주십시오"))
 k=int(input("당신의 현재나이를 입력해 주십시오"))
+r=int(input("연이율을 입력해 주십시오"))
+n=int(input("투자할 년수를 입력해 주세요")
 
 print("당신이",n,"년 뒤 받는 돈은", tuzaguide(a,k,n,r), "원 입니다.")
